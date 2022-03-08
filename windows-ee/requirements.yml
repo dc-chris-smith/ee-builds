@@ -5,3 +5,7 @@ collections:
   - ansible.utils
   - ansible.posix
   - chocolatey.chocolatey
+  - awx.awx
+  - community.general
+  - infoblox.nios_modules
+  
