@@ -11,7 +11,7 @@ USER root
 # USER codespace
 RUN echo $'# To opt out of the system crypto-policies configuration of krb5, remove the \n\
 # symlink at /etc/krb5.conf.d/crypto-policies which will not be recreated. \n\
-includedir /etc/krb5.conf.d/ \n\
+# includedir /etc/krb5.conf.d/ \n\
 \n\
 [logging] \n\
     default = FILE:/var/log/krb5libs.log \n\
