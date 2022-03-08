@@ -28,12 +28,6 @@ on:
       REDHAT_USERNAME:
         description: 'needed for registry login'
         required: false
-      QUAY_PASSWORD:
-        description: 'needed for registry login'
-        required: false
-      QUAY_USERNAME:
-        description: 'needed for registry login'
-        required: false
       AH_TOKEN:
         description: 'API token for hosted automation hub'
         required: false
@@ -62,8 +56,8 @@ jobs:
         uses: redhat-actions/podman-login@v1
         with:
           registry: quay.io
-          username: ${{ secrets.QUAY_USERNAME }}
-          password: ${{ secrets.QUAY_PASSWORD }}
+          username: ${{ secrets.REDHAT_USERNAME }}
+          password: ${{ secrets.REDHAT_PASSWORD }}
 
       - name: Log in to registry.redhat.io
         id: registry-redhat
@@ -91,7 +85,7 @@ jobs:
           tags: |
             ${{ inputs.EE_IMAGE_TAG }}
           registry: quay.io/${{ inputs.QUAY_USER }}/
-          username: ${{ secrets.QUAY_USERNAME }}
-          password: ${{ secrets.QUAY_PASSWORD }}
+          username: ${{ secrets.REDHAT_USERNAME }}
+          password: ${{ secrets.REDHAT_PASSWORD }}
       - name: Print image url
         run: echo "Image pushed to ${{ steps.push-to-quay.outputs.registry-paths }}"
