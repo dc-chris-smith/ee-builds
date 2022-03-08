@@ -2,6 +2,6 @@
 
 FROM mcr.microsoft.com/vscode/devcontainers/universal:1-focal
 
-ADD ./krb5.conf /etc/krb5.conf
+ADD krb5.conf /etc/krb5.conf.d/dekalb-domain
 
 RUN rm -f /etc/krb5.conf.d/crypto-policies
