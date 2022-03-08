@@ -3,6 +3,7 @@
 #FROM mcr.microsoft.com/vscode/devcontainers/universal:1-focal
 FROM registry.redhat.io/ansible-automation-platform-21/ee-minimal-rhel8:latest
 
-ADD krb5.conf /etc/krb5.conf.d/dekalb-domain
-
-RUN rm -f /etc/krb5.conf.d/crypto-policies
+#ADD krb5.conf /etc/krb5.conf.d/dekalb-domain
+USER root
+RUN echo $'permitted_enctypes = rc4-hmac des-cbc-crc des-cbc-md5' > /etc/crypto-policies/back-ends/krb5.config
+RUN echo $'allow_weak_crypto = true' >> /etc/crypto-policies/back-ends/krb5.config
