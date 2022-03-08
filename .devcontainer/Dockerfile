@@ -12,12 +12,12 @@ USER root
 RUN echo $'# To opt out of the system crypto-policies configuration of krb5, remove the \n\
 # symlink at /etc/krb5.conf.d/crypto-policies which will not be recreated. \n\
 # includedir /etc/krb5.conf.d/ \n\
-\n\
+ \n\
 [logging] \n\
     default = FILE:/var/log/krb5libs.log \n\
     kdc = FILE:/var/log/krb5kdc.log \n\
     admin_server = FILE:/var/log/kadmind.log \n\
-\n\
+ \n\
 [libdefaults] \n\
     dns_lookup_realm = false \n\
     dns_lookup_kdc = true \n\
@@ -33,14 +33,14 @@ RUN echo $'# To opt out of the system crypto-policies configuration of krb5, rem
     default_tkt_enctypes rc4-hmac des-cbc-crc des-cbc-md5 \n\
     permitted_enctypes = rc4-hmac des-cbc-crc des-cbc-md5 \n\
     allow_weak_crypto = true \n\
-\n\
+ \n\
 [realms] \n\
 DCG.DEKALB.LOC = { \n\
     kdc = kerberos.DCG.DEKALB.LOC \n\
     admin_server = kerberos.DCG.DEKALB.LOC \n\
     default_domain = DCG.DEKALB.LOC \n\
 } \n\
-\n\
+ \n\
 [domain_realm] \n\
 .dcg.dekalb.loc = DCG.DEKALB.LOC \n\
 dcg.dekalb.loc = DCG.DEKALB.LOC \n\
