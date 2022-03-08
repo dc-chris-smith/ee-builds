@@ -57,7 +57,7 @@ jobs:
         with:
           registry: quay.io
           username: ${{ secrets.QUAY_USERNAME }}
-          password: ${{ secrets.REDHAT_PASSWORD }}
+          password: ${{ secrets.QUAY_PASSWORD }}
 
       - name: Log in to registry.redhat.io
         id: registry-redhat
@@ -86,7 +86,6 @@ jobs:
             ${{ inputs.EE_IMAGE_TAG }}
           registry: quay.io/${{ inputs.QUAY_USER }}/
           username: ${{ secrets.QUAY_USERNAME }}
-          password: ${{ secrets.REDHAT_PASSWORD }} 
-
+          password: ${{ secrets.QUAY_PASSWORD }}
       - name: Print image url
         run: echo "Image pushed to ${{ steps.push-to-quay.outputs.registry-paths }}"
