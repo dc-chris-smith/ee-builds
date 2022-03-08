@@ -24,7 +24,7 @@ jobs:
     with:
       EE_FOLDER_NAME: 'f5_ee'
       EE_IMAGE_TAG: 'latest'
-      QUAY_USER: 'chris_smith1'
+      QUAY_USER: 'chris.smith1'
     secrets:
       REDHAT_USERNAME: ${{ secrets.REDHAT_USERNAME }}
       REDHAT_PASSWORD: ${{ secrets.REDHAT_PASSWORD }}
