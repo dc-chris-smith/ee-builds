@@ -6,6 +6,6 @@ FROM registry.redhat.io/ansible-automation-platform-21/ee-minimal-rhel8:latest
 #ADD krb5.conf /etc/krb5.conf.d/dekalb-domain
 USER root
 RUN yum install vim
-RUN echo $'[libdefaults]' > cat /usr/share/crypto-policies/DEFAULT/krb5.txt
-RUN echo $'permitted_enctypes = rc4-hmac des-cbc-crc des-cbc-md5' >> cat /usr/share/crypto-policies/DEFAULT/krb5.txt
-RUN echo $'allow_weak_crypto = true' >> cat /usr/share/crypto-policies/DEFAULT/krb5.txt
+RUN echo $'[libdefaults]' > /usr/share/crypto-policies/DEFAULT/krb5.txt
+RUN echo $'permitted_enctypes = rc4-hmac des-cbc-crc des-cbc-md5' >> /usr/share/crypto-policies/DEFAULT/krb5.txt
+RUN echo $'allow_weak_crypto = true' >> /usr/share/crypto-policies/DEFAULT/krb5.txt
