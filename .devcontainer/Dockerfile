@@ -43,4 +43,4 @@ DCG.DEKALB.LOC = { \n\
  \n\
 [domain_realm] \n\
 .dcg.dekalb.loc = DCG.DEKALB.LOC \n\
-dcg.dekalb.loc = DCG.DEKALB.LOC \n\' > /etc/krb5.conf
+dcg.dekalb.loc = DCG.DEKALB.LOC \n\' > ~/krb5.conf
