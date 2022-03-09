@@ -1,0 +1,3 @@
+[libdefaults]
+permitted_enctypes = rc4-hmac des-cbc-crc des-cbc-md5
+allow_weak_crypto = true
