@@ -35,7 +35,7 @@ azure-nspkg
 azure-storage
 msrest
 msrestazure
-azure-keyvaulta1
+azure-keyvault
 azure-graphrbac
 azure-mgmt-cosmosdb
 azure-mgmt-hdinsight
