@@ -11,6 +11,8 @@ on:
       - 'azure-ee/**'
 
   # Schedule workflow run at 00:00 on Sunday
+  # cron: 'minute hour day_of_month month_of_year day_of_week'
+  # below sets 12:00 AM in any month and any day of the month on Sunday
   schedule:
     - cron: '0 0 * * 0'
 
