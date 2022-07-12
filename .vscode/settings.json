@@ -1,5 +1,7 @@
 {
     "yaml.schemas": {
-        "https://json.schemastore.org/github-action.json": "file:///workspaces/ee-builds/.github/workflows/deploy.yml"
+        "file:///toc.schema.json": "/toc\\.yml/i",
+        "https://json.schemastore.org/github-action.json": "file:///workspaces/ee-builds/.github/workflows/deploy.yml",
+        "https://json.schemastore.org/github-workflow.json": "file:///d%3A/GitHub/ee-builds/.github/workflows/deploy.yml"
     }
 }
