@@ -1,6 +1,7 @@
 ---
 collections:
   - name: azure.azcollection
+  - name: awx.awx
 
 roles:
   - name: redhatinsights.insights-client

@@ -10,3 +10,4 @@ collections:
   - name: community.libvirt
   - name: community.postgresql
   - name: community.vmware
+  - name: awx.awx
