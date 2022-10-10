@@ -10,11 +10,13 @@ azure-mgmt-batch
 azure-mgmt-cdn
 azure-mgmt-compute
 azure-mgmt-containerinstance
+azure-mgmt-core
 azure-mgmt-containerregistry
+azure-containerregistry
 azure-mgmt-containerservice
 azure-mgmt-datalake-store
+azure-mgmt-datafactory
 azure-mgmt-dns
-azure-mgmt-keyvault
 azure-mgmt-marketplaceordering
 azure-mgmt-monitor
 azure-mgmt-managedservices
@@ -32,10 +34,11 @@ azure-mgmt-storage
 azure-mgmt-trafficmanager
 azure-mgmt-web
 azure-nspkg
-azure-storage
+azure-storage-blob
 msrest
 msrestazure
 azure-keyvault
+azure-mgmt-keyvault
 azure-graphrbac
 azure-mgmt-cosmosdb
 azure-mgmt-hdinsight
