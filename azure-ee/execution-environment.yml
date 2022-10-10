@@ -6,7 +6,7 @@ build_arg_defaults:
 
 dependencies:
   galaxy: requirements.yml
-  python: https://raw.githubusercontent.com/ansible-collections/azure/dev/requirements-azure.txt
+  python: requirements-azure.txt
 
 additional_build_steps:
   prepend: |
