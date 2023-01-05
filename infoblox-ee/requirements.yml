@@ -1,0 +1,5 @@
+---
+collections:
+  - infoblox.nios_modules
+  - community.general
+  - awx.awx
