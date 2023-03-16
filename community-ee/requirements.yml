@@ -2,11 +2,13 @@
 collections:
   - name: community.windows
   - name: community.general
+  - name: community.docker
   - name: community.dns
   - name: community.crypto
   - name: community.kubernetes
   - name: community.kubevirt
   - name: community.libvirt
+  - name: community.network
   - name: community.postgresql
   - name: community.vmware
   - name: awx.awx
