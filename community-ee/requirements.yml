@@ -1,6 +1,7 @@
 ---
 collections:
   - name: community.windows
+    version: ">=1.12.0"
   - name: community.general
   - name: community.docker
   - name: community.dns
